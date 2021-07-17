@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <title> FINAL PROJECT</title>
+      <link href="driver.css" rel="stylesheet" type="text/css"/>
+      <script src = "lib/webgl-utils.js"></script>
+      <script src = "lib/webgl-render.js"></script>
+      <script src = "lib/webgl-debug.js"></script>
+      <script src = "lib/webgl-loader.js"></script>
+      <script src = "lib/cuon-utils.js"></script>
+      <script src = "lib/cuon-matrix.js"></script>
+
+      <!-- Include shaders -->
+      <script src = "src/graphics/shaders/shader.js"></script>
+      <script src = "src/graphics/shaders/asg4.js"></script>
+
+      <!-- Include Base code -->
+      <script src = "src/graphics/geometry/vertex.js"></script>
+      <script src = "src/graphics/geometry/geometry.js"></script>
+      <script src = "src/graphics/geometry/shapes/square.js"></script>
+      <script src = "src/graphics/geometry/shapes/cube.js"></script>
+      <script src = "src/graphics/geometry/shapes/custom.js"></script>
+      <script src = "src/graphics/geometry/shapes/skybox.js"></script>
+      <script src = "src/graphics/geometry/shapes/note.js"></script>
+      <script src = "src/graphics/renderer.js"></script>
+      <script src = "src/graphics/raindrop.js"></script>
+      <script src = "src/graphics/hud.js"></script>
+      <script src = "src/graphics/light.js"></script>
+      <script src = "src/graphics/scene.js"></script>
+      <script src = "src/graphics/camera.js"></script>
+      <script src = "src/main.js"></script>
+      <script src = "src/input.js"></script>
+  </head>
+
+  <body onload = "main()">
+    <div class= "container">
+
+      <canvas class="canvas" id="webgl" width="600" height="600"></canvas>
+
+      <canvas class="canvas" id ="rain" width="600" height="600"></canvas>
+    
+      <canvas class="canvas" id ="hud" width="600" height="600"></canvas>
+    </div>
+
+
+    
+
+    <div class="side">
+
+      <div class="Objective">
+        <h2>Objective:</h2>
+        <p> The Objective is to collect all 3 pages in the map!</p>
+      </div>
+
+      <div class="Instructions">
+        <h2>Instructions:</h2>
+        <p>
+          <li>W moves camera forward</li>
+          <li>A moves camera to the left</li>
+          <li>S moves camera backwards</li>
+          <li>D moves camera to the right</li>
+          <li>J pans camera to the left</li>
+          <li>K pans camera to the right</li>
+          <li>Click on a page to collect it</li>
+        </p>
+      </div>
+
+      <div id="Contributions:">
+        <h2>Contributions</h2>
+        <p>Jackie Montes</p>
+        <p>Maritza Ramirez</p>
+        <p>Shealtiel Mulder</p>
+        <a href="https://docs.google.com/document/d/1URNKqWTZQpTevvVWMQbkWHyxZKq5nVqtWu4bYzyy9dc/edit">Description</a>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>

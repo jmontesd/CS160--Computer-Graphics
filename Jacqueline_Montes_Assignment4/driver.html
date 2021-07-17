@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <title> CMPS160 Base Code </title>
+  </head>
+
+  <body onload = "main()">
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+
+    <!-- Instructions -->
+    <br><br>
+    Instructions:
+    <ul>
+       <li>W moves camera forward</li> 
+       <li>A moves camera to the left</li>
+       <li>S moves camera backwards</li>
+       <li>D moves camera to the right</li>
+       <li>Z changes between orthographic and perspective camera</li>
+    </ul>
+    <p>- Camera can be rotated While mouse is down and moving simultaneously</p>
+    <p>- Camera can be zoomed with the mouse wheel.</p>
+    
+    
+
+
+    <!-- Example Slider -->
+    <br><br>
+    
+
+    <!-- Include external libs -->
+    <script src = "lib/webgl-utils.js"></script>
+    <script src = "lib/webgl-render.js"></script>
+    <script src = "lib/webgl-debug.js"></script>
+    <script src = "lib/webgl-loader.js"></script>
+    <script src = "lib/cuon-utils.js"></script>
+    <script src = "lib/cuon-matrix.js"></script>
+
+    <!-- Include shaders -->
+    <script src = "src/graphics/shaders/shader.js"></script>
+    <script src = "src/graphics/shaders/asg4.js"></script>
+
+    <!-- Include Base code -->
+    <script src = "src/graphics/geometry/vertex.js"></script>
+    <script src = "src/graphics/geometry/geometry.js"></script>
+    <script src = "src/graphics/geometry/shapes/square.js"></script>
+    <script src = "src/graphics/geometry/shapes/cube.js"></script>
+    <script src = "src/graphics/geometry/shapes/custom.js"></script>
+    <script src = "src/graphics/renderer.js"></script>
+    <script src = "src/graphics/scene.js"></script>
+    <script src = "src/graphics/camera.js"></script>
+    <script src = "src/main.js"></script>
+    <script src = "src/input.js"></script>
+  </body>
+</html>

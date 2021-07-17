@@ -1,0 +1,29 @@
+.container { 
+	position: relative; 
+}
+
+.canvas { 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+ }
+
+
+.webgl{
+	z-index: 0;
+}
+
+.hud{
+	z-index: 2;
+}
+
+.rain{
+	z-index: 1;
+}
+
+.side{
+	position:absolute;
+	top:20;
+	left:650;
+}
+

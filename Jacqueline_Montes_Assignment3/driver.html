@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <title> CMPS160- Assignment #3 </title>
+  </head>
+
+  <body onload = "main()">
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+
+    <p> 
+    <!-- Clear Canvas Button-->  
+    <button type="button" onclick="clearCanvas()">Clear Canvas</button>
+    <br><br>
+    <!-- Buttons to load and print file content -->
+    Set OBJ: <input type="file" id="objInput"/>
+    Set Texture Image: <input type="file" id="texInput"/>
+    <button type="button" id="addObj">Add Geometry To Scene</button>
+    </p>
+
+
+    <p>
+      <br />
+      Drawing Mode:
+      <br>
+       <!-- Spinning Square Button -->  
+      <button type="button" onclick="setSquare()">Spinning Squares</button>
+       <!-- Fluctuating Triangle Button -->  
+      <button type="button" onclick="setTriangle()">Fluctuating Triangles</button>
+       <!-- Random Circle Button -->  
+      <button type="button" onclick="setCircle()">Randomly Moving Circles</button>
+       <!-- Tilted Cube Button -->  
+      <button type="button" onclick="setCube()">Tilted Cube</button>
+    </p>
+
+
+    <p>
+      <br />
+      Shape Color:
+      <br>
+        <!-- Solid or Rainbow Color -->
+        <input type="button" value="Solid" id="setColor" onclick="setColor()" >
+        <!-- Red -->
+        <label>Red</label>
+        <input id="redSlider" type="range" min="0" max="255" id="r" value="30" >
+        <!-- Green -->
+        <label>Green</label>
+        <input id="greenSlider" type="range" min="0" max="255" id="g" value="144" >
+        <!-- Blue -->
+        <label>Blue</label>
+        <input id="blueSlider" type="range" min="0" max="255" id="b" value="255" >  
+    </p>
+
+
+    <p>
+        <!-- Shape Size -->
+        <label>Shape Size:</label>
+        <input id="shapeSlider" type="range" min="10" max="100" id="ss" value="20" >
+        <label>(Circles) Segment Count:</label>
+        <input id="circleSlider" type="range" min="3" max="35" id="sc" value="15" >
+    </p>
+
+    <!-- Include external libs -->
+      <script src = "lib/webgl-utils.js"></script>
+      <script src = "lib/webgl-render.js"></script>
+      <script src = "lib/webgl-debug.js"></script>
+      <script src = "lib/webgl-loader.js"></script>
+      <script src = "lib/cuon-utils.js"></script>
+      <script src = "lib/cuon-matrix.js"></script>
+      <!-- not needed 
+      <script src = "lib/load-file.js"></script>
+      -->
+      <!-- Include shaders -->
+      <script src = "src/graphics/shaders/shader.js"></script>
+      <script src = "src/graphics/shaders/asg1.js"></script>
+
+      <!-- Include Base code -->
+      <script src = "src/graphics/geometry/vertex.js"></script>
+      <script src = "src/graphics/geometry/geometry.js"></script>
+      <script src = "src/graphics/geometry/shapes/triangle.js"></script>
+      <script src = "src/graphics/geometry/shapes/square.js"></script>
+      <script src = "src/graphics/geometry/shapes/circle.js"></script>
+      <script src = "src/graphics/geometry/shapes/cube.js"></script>
+      <script src = "src/graphics/geometry/shapes/cube2.js"></script>
+      <script src = "src/graphics/geometry/shapes/custom.js"></script>
+      <script src = "src/graphics/renderer.js"></script>
+      <script src = "src/graphics/scene.js"></script>
+      <script src = "src/main.js"></script>
+      <script src = "src/input.js"></script>
+
+  </body>
+</html>
